@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/icons8-girassol-16.png" type="image/x-icon">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="login-planty.css">
+
+    <!--Ícone Menu Hambúrguer-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <title>Login</title>
+</head>
+<body onload="funcaoNome()">
+
+     <!--Header-->
+
+     <header class="header-container" id="top">
+        <div class="column logo">
+            <a href="../../index.html"><img class="header-logo logo_planty" src="img/Logo-Planty.png" alt="Logo Original Planty"></a>
+        </div>
+
+        <div class="column search">
+            <div class="search-box">
+                <input type="text" id="txtBusca" placeholder="Pesquisar..." class="inputPesquisar" />
+
+                <!-- Lista da barra de pesquisa-->
+
+                <div class="busca">
+                    <ul class="searchResult"id="searchResults"></ul>
+                </div> 
+
+                <!-- -->
+
+                  <a href="">
+                  <img
+                    class="imglupa"
+                    id="search-image"
+                    src="img/search.png"
+                    alt="Ícone de Busca">
+                 </a>
+            </div>
+
+        </div>
+        <div class="column login-cadastro">
+            <a id="loginCad" href="../Login page/login-planty.html">Login / Cadastro</a>
+            <img class="account-icon" src="img/account_circle.png" alt="Ícone de Usuário">
+        </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x burger" onclick="menuShow()"></i>
+        </div>
+
+    </header>
+
+    <!--Navegação-->
+
+    <nav>
+        <ul class="main-menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Blog e Posts/Blog/Index.html">Blog</a></li>
+            <li><a href="../Quem-somos/about-us.html">Quem Somos</a></li>
+            <li><a href="../Contato/contato-page.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Mobile Menu -->
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a id="LoginCadHamb" href="../Login page/login-planty.html">Login/Cadastro</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Blog e Posts/Blog/Index.html">Blog</a></li>
+            <li><a href="../Quem-somos/about-us.html">Quem somos</a></li>
+            <li><a href="../Contato/contato-page.html">Fale Conosco</a></li>
+        </ul>
+      </div>
+
+    <!-- Main Login-->
+
+    <main>
+        <div class="container">
+            <div class="esquerda-login">
+                 <img class="img-login" src="img/img-login.png" alt="Imagem plantas">
+            </div>
+            <div class="direita-login">
+                <h1>Entre ou Cadastre-se</h1>
+                <div id="msgValida"></div>
+                
+                <div class="input-box">
+                    <label for="email" type="email" >E-mail</label>
+                    <input type="email" name="email" id="emailValida"
+                    placeholder="Insira seu e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="senha" type="password" >Senha</label>
+                    <input type="password" name="senha" id="senhaValida" placeholder="Insira sua senha" required>
+                </div>
+                <div class="botoes">
+                    <button class="btn-entrar" type="submit" onclick="checkValida()">Entrar</button>
+
+                    <a href="../Cadastro page/cadastro-page.html">
+                        <button class="btn-cadastrar">Cadastrar</button>
+                    </a>
+                </div>   
+
+                <div class="esqSenha">
+                    <a href="../Esqueci-minha-senha/index.html">
+                    <h4 class="esqSenha"> <i>Esqueci a minha senha!</i> </h4>
+                    </a>
+                </div>       
+            </div>
+        </div>
+    </main>
+
+    <!-- Copyright-->
+    
+        <div class="copyright">
+            <p>Projeto Cultivo de Plantas ICEI | Todos os direitos reservados.</p>
+        </div>
+
+     <!-- Back to top icon-->
+       <div>
+        <a href="#top" class="back-to-top"><img src="img/icon-back-to-top.png" alt="Ícone de Back to Top"></a>
+       </div>
+
+    
+    <!-- Link JavaScript -->
+
+    <script type="text/javascript" src="login.js"></script>
+</body>
+
+</body>
+</html>
